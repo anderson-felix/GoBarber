@@ -14,7 +14,7 @@ class AppointmentsRepository {
     this.appointments = [];
   }
 
-  public all(): Appointment[] {
+  public getAll(): Appointment[] {
     return this.appointments;
   }
 

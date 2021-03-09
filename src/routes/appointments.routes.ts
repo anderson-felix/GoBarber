@@ -8,7 +8,7 @@ const appointmentsRouter = Router();
 const appointmentsRepository = new AppointmentsRepository();
 
 appointmentsRouter.get('/', (req, res) => {
-  const appointment = appointmentsRepository.all();
+  const appointment = appointmentsRepository.getAll();
   return res.json(appointment);
 });
 
