@@ -1,13 +1,14 @@
 import express from 'express';
+import 'reflect-metadata';
 
 import routes from './routes';
+import './database';
 
 const server = express();
 
-server.listen(8000);
-
 server.use(express.json());
-
 server.use(routes);
 
-console.log('server listening on port 8000');
+server.listen(8000, () => {
+  console.log('🚀 server listening on port 8000 ✔');
+});
