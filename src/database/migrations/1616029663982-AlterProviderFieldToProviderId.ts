@@ -1,5 +1,3 @@
-import provider from 'tsyringe/dist/typings/providers/provider';
-
 import {
   MigrationInterface,
   QueryRunner,

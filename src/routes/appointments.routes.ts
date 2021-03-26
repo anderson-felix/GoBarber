@@ -13,8 +13,6 @@ appointmentsRouter.use(ensureAuthenticated);
 appointmentsRouter.get('/', async (req, res) => {
   const appointmentsRepository = getCustomRepository(AppointmentsRepository);
 
-  console.log(req.user);
-
   const appointment = await appointmentsRepository.find();
 
   return res.json(appointment);
